@@ -159,7 +159,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=proyecto_arquitectura
+CMAKE_PROJECT_NAME:STATIC=imtool
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -231,6 +231,15 @@ ProcessorCount_cmd_nproc:FILEPATH=/usr/bin/nproc
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
+
+//Value Computed by CMake
+imtool_BINARY_DIR:STATIC=/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/laboratorios/proyecto_arquitectura/cmake-build-debug
+
+//Value Computed by CMake
+imtool_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+imtool_SOURCE_DIR:STATIC=/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/laboratorios/proyecto_arquitectura
 
 //Value Computed by CMake
 proyecto_arquitectura_BINARY_DIR:STATIC=/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/laboratorios/proyecto_arquitectura/cmake-build-debug

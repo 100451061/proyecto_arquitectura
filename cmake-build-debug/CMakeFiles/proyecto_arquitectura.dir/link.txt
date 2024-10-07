@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/proyecto_arquitectura.dir/main.cpp.o -o proyecto_arquitectura

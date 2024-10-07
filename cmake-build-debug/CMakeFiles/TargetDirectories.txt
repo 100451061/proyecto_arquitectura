@@ -1,0 +1,3 @@
+/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles/proyecto_arquitectura.dir
+/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles/rebuild_cache.dir

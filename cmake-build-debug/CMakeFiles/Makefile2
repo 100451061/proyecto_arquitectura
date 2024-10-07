@@ -54,51 +54,212 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/laboratorios/proyecto_arquitectura"
+CMAKE_SOURCE_DIR = "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/laboratorios/proyecto_arquitectura/cmake-build-debug"
+CMAKE_BINARY_DIR = "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug"
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/proyecto_arquitectura.dir/all
+all: CMakeFiles/imtool-soa.dir/all
+all: CMakeFiles/imtool-aos.dir/all
+all: common/all
+all: imgaos/all
+all: imgsoa/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: common/preinstall
+preinstall: imgaos/preinstall
+preinstall: imgsoa/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/proyecto_arquitectura.dir/clean
+clean: CMakeFiles/imtool-soa.dir/clean
+clean: CMakeFiles/imtool-aos.dir/clean
+clean: common/clean
+clean: imgaos/clean
+clean: imgsoa/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/proyecto_arquitectura.dir
+# Directory level rules for directory common
+
+# Recursive "all" directory target.
+common/all: common/CMakeFiles/common.dir/all
+.PHONY : common/all
+
+# Recursive "preinstall" directory target.
+common/preinstall:
+.PHONY : common/preinstall
+
+# Recursive "clean" directory target.
+common/clean: common/CMakeFiles/common.dir/clean
+.PHONY : common/clean
+
+#=============================================================================
+# Directory level rules for directory imgaos
+
+# Recursive "all" directory target.
+imgaos/all: imgaos/CMakeFiles/imgaos.dir/all
+.PHONY : imgaos/all
+
+# Recursive "preinstall" directory target.
+imgaos/preinstall:
+.PHONY : imgaos/preinstall
+
+# Recursive "clean" directory target.
+imgaos/clean: imgaos/CMakeFiles/imgaos.dir/clean
+.PHONY : imgaos/clean
+
+#=============================================================================
+# Directory level rules for directory imgsoa
+
+# Recursive "all" directory target.
+imgsoa/all: imgsoa/CMakeFiles/imgsoa.dir/all
+.PHONY : imgsoa/all
+
+# Recursive "preinstall" directory target.
+imgsoa/preinstall:
+.PHONY : imgsoa/preinstall
+
+# Recursive "clean" directory target.
+imgsoa/clean: imgsoa/CMakeFiles/imgsoa.dir/clean
+.PHONY : imgsoa/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/imtool-soa.dir
 
 # All Build rule for target.
-CMakeFiles/proyecto_arquitectura.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/proyecto_arquitectura.dir/build.make CMakeFiles/proyecto_arquitectura.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/proyecto_arquitectura.dir/build.make CMakeFiles/proyecto_arquitectura.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target proyecto_arquitectura"
-.PHONY : CMakeFiles/proyecto_arquitectura.dir/all
+CMakeFiles/imtool-soa.dir/all: common/CMakeFiles/common.dir/all
+CMakeFiles/imtool-soa.dir/all: imgsoa/CMakeFiles/imgsoa.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imtool-soa.dir/build.make CMakeFiles/imtool-soa.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imtool-soa.dir/build.make CMakeFiles/imtool-soa.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" --progress-num=10,11 "Built target imtool-soa"
+.PHONY : CMakeFiles/imtool-soa.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/proyecto_arquitectura.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/proyecto_arquitectura.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" 0
-.PHONY : CMakeFiles/proyecto_arquitectura.dir/rule
+CMakeFiles/imtool-soa.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/imtool-soa.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/imtool-soa.dir/rule
 
 # Convenience name for target.
-proyecto_arquitectura: CMakeFiles/proyecto_arquitectura.dir/rule
-.PHONY : proyecto_arquitectura
+imtool-soa: CMakeFiles/imtool-soa.dir/rule
+.PHONY : imtool-soa
 
 # clean rule for target.
-CMakeFiles/proyecto_arquitectura.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/proyecto_arquitectura.dir/build.make CMakeFiles/proyecto_arquitectura.dir/clean
-.PHONY : CMakeFiles/proyecto_arquitectura.dir/clean
+CMakeFiles/imtool-soa.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imtool-soa.dir/build.make CMakeFiles/imtool-soa.dir/clean
+.PHONY : CMakeFiles/imtool-soa.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/imtool-aos.dir
+
+# All Build rule for target.
+CMakeFiles/imtool-aos.dir/all: common/CMakeFiles/common.dir/all
+CMakeFiles/imtool-aos.dir/all: imgaos/CMakeFiles/imgaos.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imtool-aos.dir/build.make CMakeFiles/imtool-aos.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imtool-aos.dir/build.make CMakeFiles/imtool-aos.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" --progress-num=8,9 "Built target imtool-aos"
+.PHONY : CMakeFiles/imtool-aos.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/imtool-aos.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/imtool-aos.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/imtool-aos.dir/rule
+
+# Convenience name for target.
+imtool-aos: CMakeFiles/imtool-aos.dir/rule
+.PHONY : imtool-aos
+
+# clean rule for target.
+CMakeFiles/imtool-aos.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imtool-aos.dir/build.make CMakeFiles/imtool-aos.dir/clean
+.PHONY : CMakeFiles/imtool-aos.dir/clean
+
+#=============================================================================
+# Target rules for target common/CMakeFiles/common.dir
+
+# All Build rule for target.
+common/CMakeFiles/common.dir/all:
+	$(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/depend
+	$(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" --progress-num=1,2,3 "Built target common"
+.PHONY : common/CMakeFiles/common.dir/all
+
+# Build rule for subdir invocation for target.
+common/CMakeFiles/common.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common/CMakeFiles/common.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" 0
+.PHONY : common/CMakeFiles/common.dir/rule
+
+# Convenience name for target.
+common: common/CMakeFiles/common.dir/rule
+.PHONY : common
+
+# clean rule for target.
+common/CMakeFiles/common.dir/clean:
+	$(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/clean
+.PHONY : common/CMakeFiles/common.dir/clean
+
+#=============================================================================
+# Target rules for target imgaos/CMakeFiles/imgaos.dir
+
+# All Build rule for target.
+imgaos/CMakeFiles/imgaos.dir/all:
+	$(MAKE) $(MAKESILENT) -f imgaos/CMakeFiles/imgaos.dir/build.make imgaos/CMakeFiles/imgaos.dir/depend
+	$(MAKE) $(MAKESILENT) -f imgaos/CMakeFiles/imgaos.dir/build.make imgaos/CMakeFiles/imgaos.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" --progress-num=4,5 "Built target imgaos"
+.PHONY : imgaos/CMakeFiles/imgaos.dir/all
+
+# Build rule for subdir invocation for target.
+imgaos/CMakeFiles/imgaos.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgaos/CMakeFiles/imgaos.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" 0
+.PHONY : imgaos/CMakeFiles/imgaos.dir/rule
+
+# Convenience name for target.
+imgaos: imgaos/CMakeFiles/imgaos.dir/rule
+.PHONY : imgaos
+
+# clean rule for target.
+imgaos/CMakeFiles/imgaos.dir/clean:
+	$(MAKE) $(MAKESILENT) -f imgaos/CMakeFiles/imgaos.dir/build.make imgaos/CMakeFiles/imgaos.dir/clean
+.PHONY : imgaos/CMakeFiles/imgaos.dir/clean
+
+#=============================================================================
+# Target rules for target imgsoa/CMakeFiles/imgsoa.dir
+
+# All Build rule for target.
+imgsoa/CMakeFiles/imgsoa.dir/all:
+	$(MAKE) $(MAKESILENT) -f imgsoa/CMakeFiles/imgsoa.dir/build.make imgsoa/CMakeFiles/imgsoa.dir/depend
+	$(MAKE) $(MAKESILENT) -f imgsoa/CMakeFiles/imgsoa.dir/build.make imgsoa/CMakeFiles/imgsoa.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" --progress-num=6,7 "Built target imgsoa"
+.PHONY : imgsoa/CMakeFiles/imgsoa.dir/all
+
+# Build rule for subdir invocation for target.
+imgsoa/CMakeFiles/imgsoa.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgsoa/CMakeFiles/imgsoa.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" 0
+.PHONY : imgsoa/CMakeFiles/imgsoa.dir/rule
+
+# Convenience name for target.
+imgsoa: imgsoa/CMakeFiles/imgsoa.dir/rule
+.PHONY : imgsoa
+
+# clean rule for target.
+imgsoa/CMakeFiles/imgsoa.dir/clean:
+	$(MAKE) $(MAKESILENT) -f imgsoa/CMakeFiles/imgsoa.dir/build.make imgsoa/CMakeFiles/imgsoa.dir/clean
+.PHONY : imgsoa/CMakeFiles/imgsoa.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

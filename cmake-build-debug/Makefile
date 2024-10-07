@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/laboratorios/proyecto_arquitectura"
+CMAKE_SOURCE_DIR = "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/laboratorios/proyecto_arquitectura/cmake-build-debug"
+CMAKE_BINARY_DIR = "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/laboratorios/proyecto_arquitectura/cmake-build-debug//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -117,41 +117,117 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named proyecto_arquitectura
+# Target rules for targets named imtool-soa
 
 # Build rule for target.
-proyecto_arquitectura: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proyecto_arquitectura
-.PHONY : proyecto_arquitectura
+imtool-soa: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imtool-soa
+.PHONY : imtool-soa
 
 # fast build rule for target.
-proyecto_arquitectura/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/proyecto_arquitectura.dir/build.make CMakeFiles/proyecto_arquitectura.dir/build
-.PHONY : proyecto_arquitectura/fast
+imtool-soa/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imtool-soa.dir/build.make CMakeFiles/imtool-soa.dir/build
+.PHONY : imtool-soa/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+#=============================================================================
+# Target rules for targets named imtool-aos
+
+# Build rule for target.
+imtool-aos: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imtool-aos
+.PHONY : imtool-aos
+
+# fast build rule for target.
+imtool-aos/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imtool-aos.dir/build.make CMakeFiles/imtool-aos.dir/build
+.PHONY : imtool-aos/fast
+
+#=============================================================================
+# Target rules for targets named common
+
+# Build rule for target.
+common: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common
+.PHONY : common
+
+# fast build rule for target.
+common/fast:
+	$(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/build
+.PHONY : common/fast
+
+#=============================================================================
+# Target rules for targets named imgaos
+
+# Build rule for target.
+imgaos: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgaos
+.PHONY : imgaos
+
+# fast build rule for target.
+imgaos/fast:
+	$(MAKE) $(MAKESILENT) -f imgaos/CMakeFiles/imgaos.dir/build.make imgaos/CMakeFiles/imgaos.dir/build
+.PHONY : imgaos/fast
+
+#=============================================================================
+# Target rules for targets named imgsoa
+
+# Build rule for target.
+imgsoa: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgsoa
+.PHONY : imgsoa
+
+# fast build rule for target.
+imgsoa/fast:
+	$(MAKE) $(MAKESILENT) -f imgsoa/CMakeFiles/imgsoa.dir/build.make imgsoa/CMakeFiles/imgsoa.dir/build
+.PHONY : imgsoa/fast
+
+main_aos.o: main_aos.cpp.o
+.PHONY : main_aos.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/proyecto_arquitectura.dir/build.make CMakeFiles/proyecto_arquitectura.dir/main.cpp.o
-.PHONY : main.cpp.o
+main_aos.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imtool-aos.dir/build.make CMakeFiles/imtool-aos.dir/main_aos.cpp.o
+.PHONY : main_aos.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+main_aos.i: main_aos.cpp.i
+.PHONY : main_aos.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/proyecto_arquitectura.dir/build.make CMakeFiles/proyecto_arquitectura.dir/main.cpp.i
-.PHONY : main.cpp.i
+main_aos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imtool-aos.dir/build.make CMakeFiles/imtool-aos.dir/main_aos.cpp.i
+.PHONY : main_aos.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+main_aos.s: main_aos.cpp.s
+.PHONY : main_aos.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/proyecto_arquitectura.dir/build.make CMakeFiles/proyecto_arquitectura.dir/main.cpp.s
-.PHONY : main.cpp.s
+main_aos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imtool-aos.dir/build.make CMakeFiles/imtool-aos.dir/main_aos.cpp.s
+.PHONY : main_aos.cpp.s
+
+main_soa.o: main_soa.cpp.o
+.PHONY : main_soa.o
+
+# target to build an object file
+main_soa.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imtool-soa.dir/build.make CMakeFiles/imtool-soa.dir/main_soa.cpp.o
+.PHONY : main_soa.cpp.o
+
+main_soa.i: main_soa.cpp.i
+.PHONY : main_soa.i
+
+# target to preprocess a source file
+main_soa.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imtool-soa.dir/build.make CMakeFiles/imtool-soa.dir/main_soa.cpp.i
+.PHONY : main_soa.cpp.i
+
+main_soa.s: main_soa.cpp.s
+.PHONY : main_soa.s
+
+# target to generate assembly for a file
+main_soa.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imtool-soa.dir/build.make CMakeFiles/imtool-soa.dir/main_soa.cpp.s
+.PHONY : main_soa.cpp.s
 
 # Help Target
 help:
@@ -161,10 +237,17 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... proyecto_arquitectura"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... common"
+	@echo "... imgaos"
+	@echo "... imgsoa"
+	@echo "... imtool-aos"
+	@echo "... imtool-soa"
+	@echo "... main_aos.o"
+	@echo "... main_aos.i"
+	@echo "... main_aos.s"
+	@echo "... main_soa.o"
+	@echo "... main_soa.i"
+	@echo "... main_soa.s"
 .PHONY : help
 
 

@@ -3,6 +3,6 @@
 
 #include <string>
 
-void process_image_aos(const std::string& filename);
+void process_image_aos(const std::string &filename);
 
 #endif

@@ -2,7 +2,7 @@
 #include "imagesoa.hpp"
 #include <iostream>
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[]) {
     try {
         std::string operation = parse_operation(argc, argv);
 
@@ -11,7 +11,7 @@ int main(int argc, char* argv[]) {
         } else {
             process_image_soa(argv[1]);
         }
-    } catch (const std::exception& e) {
+    } catch (const std::exception &e) {
         std::cerr << "Error: " << e.what() << std::endl;
         return -1;
     }

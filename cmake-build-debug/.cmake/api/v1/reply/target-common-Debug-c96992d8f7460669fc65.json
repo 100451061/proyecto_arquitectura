@@ -1,8 +1,9 @@
 {
+	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "proyecto_arquitectura"
+			"path" : "common/libcommon.a"
 		}
 	],
 	"backtrace" : 1,
@@ -10,11 +11,11 @@
 	{
 		"commands" : 
 		[
-			"add_executable"
+			"add_library"
 		],
 		"files" : 
 		[
-			"CMakeLists.txt"
+			"common/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -24,7 +25,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 1,
 				"parent" : 0
 			}
 		]
@@ -35,7 +36,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++14 -fdiagnostics-color=always"
+					"fragment" : "-g -std=c++20 -fdiagnostics-color=always"
 				}
 			],
 			"language" : "CXX",
@@ -45,36 +46,22 @@
 				[
 					1
 				],
-				"standard" : "14"
+				"standard" : "20"
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
-	"id" : "proyecto_arquitectura::@6890427a1f51a3e7e1df",
-	"link" : 
-	{
-		"commandFragments" : 
-		[
-			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
-			{
-				"fragment" : "",
-				"role" : "flags"
-			}
-		],
-		"language" : "CXX"
-	},
-	"name" : "proyecto_arquitectura",
-	"nameOnDisk" : "proyecto_arquitectura",
+	"id" : "common::@bfc844598bd03e848b3c",
+	"name" : "common",
+	"nameOnDisk" : "libcommon.a",
 	"paths" : 
 	{
-		"build" : ".",
-		"source" : "."
+		"build" : "common",
+		"source" : "common"
 	},
 	"sourceGroups" : 
 	[
@@ -82,7 +69,8 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
@@ -91,9 +79,15 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "common/progargs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "common/binaryio.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "EXECUTABLE"
+	"type" : "STATIC_LIBRARY"
 }

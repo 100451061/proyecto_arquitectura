@@ -7,11 +7,12 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/laboratorios/proyecto_arquitectura/CMakeLists.txt"
-  "CMakeFiles/3.30.2/CMakeCCompiler.cmake"
+  "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/CMakeLists.txt"
   "CMakeFiles/3.30.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.2/CMakeSystem.cmake"
-  "/usr/share/cmake-3.30/Modules/CMakeCInformation.cmake"
+  "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/common/CMakeLists.txt"
+  "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/imgaos/CMakeLists.txt"
+  "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/imgsoa/CMakeLists.txt"
   "/usr/share/cmake-3.30/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-3.30/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
@@ -22,10 +23,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
-  "/usr/share/cmake-3.30/Modules/Compiler/GNU-C.cmake"
   "/usr/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake"
   "/usr/share/cmake-3.30/Modules/Compiler/GNU.cmake"
-  "/usr/share/cmake-3.30/Modules/Platform/Linux-GNU-C.cmake"
   "/usr/share/cmake-3.30/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/share/cmake-3.30/Modules/Platform/Linux-GNU.cmake"
   "/usr/share/cmake-3.30/Modules/Platform/Linux-Initialize.cmake"
@@ -43,9 +42,16 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "common/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "imgaos/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "imgsoa/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/proyecto_arquitectura.dir/DependInfo.cmake"
+  "CMakeFiles/imtool-soa.dir/DependInfo.cmake"
+  "CMakeFiles/imtool-aos.dir/DependInfo.cmake"
+  "common/CMakeFiles/common.dir/DependInfo.cmake"
+  "imgaos/CMakeFiles/imgaos.dir/DependInfo.cmake"
+  "imgsoa/CMakeFiles/imgsoa.dir/DependInfo.cmake"
   )

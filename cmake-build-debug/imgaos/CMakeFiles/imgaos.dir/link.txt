@@ -1,0 +1,2 @@
+/usr/bin/ar qc libimgaos.a CMakeFiles/imgaos.dir/imageaos.cpp.o
+/usr/bin/ranlib libimgaos.a

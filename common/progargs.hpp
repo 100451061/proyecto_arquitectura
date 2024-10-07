@@ -3,7 +3,8 @@
 
 #include <string>
 
-std::string parse_operation(int argc, char* argv[]);
-void print_image_metadata(const std::string& filename);
+std::string parse_operation(int argc, char *argv[]);
+
+void print_image_metadata(const std::string &filename);
 
 #endif

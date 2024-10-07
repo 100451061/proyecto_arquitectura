@@ -1,0 +1,2 @@
+/usr/bin/ar qc libimgsoa.a CMakeFiles/imgsoa.dir/imagesoa.cpp.o
+/usr/bin/ranlib libimgsoa.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcommon.a CMakeFiles/common.dir/progargs.cpp.o CMakeFiles/common.dir/binaryio.cpp.o
+/usr/bin/ranlib libcommon.a

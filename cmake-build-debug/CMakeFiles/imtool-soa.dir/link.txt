@@ -1,1 +1,0 @@
-/usr/bin/c++ -g "CMakeFiles/imtool-soa.dir/main_soa.cpp.o" -o imtool-soa  imgsoa/libimgsoa.a common/libcommon.a

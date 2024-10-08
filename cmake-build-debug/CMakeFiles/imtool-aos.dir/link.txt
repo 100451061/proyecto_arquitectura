@@ -1,1 +1,0 @@
-/usr/bin/c++ -g "CMakeFiles/imtool-aos.dir/main_aos.cpp.o" -o imtool-aos  imgaos/libimgaos.a common/libcommon.a

@@ -1,0 +1,25 @@
+Checks: ’−∗,
+modernize−∗,
+bugprone−∗,
+cert−∗,
+cppcoreguidelines−∗,
+misc−∗,
+modernize−∗,
+performance−∗,
+readability −∗,
+−modernize−use−trailing−return−type’
+CheckOptions:
+bugprone−assert−side−effect.AssertMacros: ’assert,Expects,Ensures’
+bugprone−misplaced−widening−cast.CheckImplicitCasts: true
+cppcoreguidelines−pro−type−const−cast.StrictMode: true
+misc−non−private−member−variables−in−classes.IgnoreClassesWithAllMemberVariablesBeingPublic: true
+modernize−deprecated−headers.CheckHeaderFile: true
+readability −function−cognitive−complexity.Threshold: 50
+readability −function−cognitive−complexity.Threshold.DescribeBasicIncrements: true
+readability −function−size.LineThreshold: 40
+readability −function−size.ParameterThreshold: 4
+WarningsAsErrors: ’∗’
+HeaderFileExtensions: [ ’h’ , ’hpp’ ]
+ImplementationFileExtensions: [ ’cpp’]
+FormatStyle: file
+

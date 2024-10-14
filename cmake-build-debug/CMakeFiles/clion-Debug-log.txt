@@ -1,0 +1,42 @@
+/var/lib/snapd/snap/clion/296/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui -B /home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/cmake-build-debug
+CMake Error at CMakeLists.txt:40 (add_subdirectory):
+  The source directory
+
+    /home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/utest-common
+
+  does not contain a CMakeLists.txt file.
+
+
+CMake Error at CMakeLists.txt:41 (add_subdirectory):
+  The source directory
+
+    /home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/utest-imgaos
+
+  does not contain a CMakeLists.txt file.
+
+
+CMake Error at CMakeLists.txt:42 (add_subdirectory):
+  The source directory
+
+    /home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/utest-imgsoa
+
+  does not contain a CMakeLists.txt file.
+
+
+CMake Error at CMakeLists.txt:43 (add_subdirectory):
+  The source directory
+
+    /home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/ftest-aos
+
+  does not contain a CMakeLists.txt file.
+
+
+CMake Error at CMakeLists.txt:44 (add_subdirectory):
+  The source directory
+
+    /home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/ftest-soa
+
+  does not contain a CMakeLists.txt file.
+
+
+-- Configuring incomplete, errors occurred!

@@ -3,5 +3,7 @@
 
 # Ignore CMake build directory
 cmake-build-debug/
+build
 
 documentation
+rebuild.sh

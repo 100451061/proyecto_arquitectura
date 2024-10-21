@@ -12,7 +12,6 @@ cmake ..
 make --build .
 ```
 Con eso os debería funcionar. 
->[!warning] Cuidado
-> Si quereis volver a hacer el build del proyecto, primero eliminar la carpeta build, y repetir el proceso. 
+__Cuidado:__ Si quereis volver a hacer el build del proyecto, primero eliminar la carpeta build, y repetir el proceso. 
 
 

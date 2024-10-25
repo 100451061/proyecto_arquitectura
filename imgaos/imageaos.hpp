@@ -17,13 +17,13 @@ struct Pixel {
 class image_aos {
 public:
   // constructor que recibe el path de la imagen
-  image_aos(const std::string &filename);
+  void info(const std::string &filename);
   
   // metodo para leer la imagen ppm 
   void load_ppm_from_file(std::ifstream& file, const std::string& filepath);
  
   // metodo que extrae los metadatos de la imagen
-  void extract_metadata() const;
+  void extract_metadata(const std::string &filename);
 
 private:
   // definicion de altura, anchura y valor max de color

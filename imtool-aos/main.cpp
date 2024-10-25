@@ -21,7 +21,8 @@ int main(int argc, char* argv[]) {
       return -1;
     }
     // Llamar funcion AOS
-    image_aos image_processor(argv[1]);
+    image_aos image_processor_aos;
+    image_processor_aos.info(string(argv[1]));
   }
   
   // MAX LEVEL

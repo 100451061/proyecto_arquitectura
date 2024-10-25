@@ -3,14 +3,15 @@
 #include <fstream>
 #include <string>
 
+using namespace std;
 
-image_aos::image_aos(const std::string &filename) {
-  std::cout << "Procesando imagen AOS: " << filename << std::endl;
-  std::ifstream input_file; 
+void image_aos::info(const string &filename) {
+  cout << "Procesando imagen AOS: " << filename << endl;
+  ifstream input_file; 
   load_ppm_from_file(input_file, filename);
   
-  std::string magic_number, width_s, height_s, color_max_s;
-  std::uint16_t width, height, color_max; // he puesto uint16_t por poner ns si es el correcto. 
+  string magic_number, width_s, height_s, color_max_s;
+  int width, height, color_max; // he puesto uint16_t por poner ns si es el correcto. 
 
   // Comprobar que es archivo ppm (num mag = P6)
   input_file >> magic_number;
@@ -18,7 +19,7 @@ image_aos::image_aos(const std::string &filename) {
   // ver numero magico, borrar antes de entrega. 
   // std::cout << "numero magico: " << magic_number << std::endl;
     if (magic_number != "P6") { //funciona 
-    std::cerr << "Archivo no es PPM" << std::endl; 
+    cerr << "Archivo no es PPM" << endl; 
   }
   
   // Extraer resto de metadatos 
@@ -27,16 +28,17 @@ image_aos::image_aos(const std::string &filename) {
   input_file >> color_max_s;
 
   //Cast de los valores numericos en string a int
-  width = std::stoi(width_s);
-  height = std::stoi(height_s);
-  color_max = std::stoi(color_max_s);
-  
-  //std::cout << "anchura: " << width << std::endl;
-  //std::cout << "altura: " << height << std::endl;
-  //std::cout << "color max: " << color_max << std::endl;
+  width = stoi(width_s);
+  height = stoi(height_s);
+  color_max = stoi(color_max_s);
+ 
+  cout << "Número mágico: " << magic_number << endl;
+  cout << "Anchura: " << width << endl;
+  cout << "Altura: " << height << endl;
+  cout << "Color máximo: " << color_max << endl;
   
   if (color_max < 0 || color_max > 65535){
-    std::cerr << "Error: Valor de color max incorrecto" << std::endl; 
+    cerr << "Error: Valor de color max incorrecto" << endl; 
   } else if (color_max < 256) {
     // caso con 1 byte por color RGB
   
@@ -46,14 +48,22 @@ image_aos::image_aos(const std::string &filename) {
   }
 };
 
-void image_aos::load_ppm_from_file(std::ifstream& file, const std::string& filepath) {
-  
+void image_aos::load_ppm_from_file(ifstream& file, const string& filepath) {
   // abrir archivo en modo binario
   //std::ifstream file(filepath, std::ios::binary);   
-  file.open(filepath, std::ios::binary); 
+  file.open(filepath, ios::binary); 
   //Comprobar error en apertura fichero
   if (!file.is_open()) {
-    std::cerr << "Error al abrir el archivo en modo binario" << std::endl;
+    cerr << "Error al abrir el archivo en modo binario" << endl;
     return; 
   }
 };
+
+//void image_aos::extract_metadata() const {
+  // Extraer metadatos de la imagen
+  //std::cout << "Extrayendo metadatos de la imagen" << std::endl;
+  //std::cout << "Anchura: " << width << std::endl;
+  //std::cout << "Altura: " << height << std::endl;
+  //std::cout << "Color máximo: " << color_max << std::endl;
+//};
+

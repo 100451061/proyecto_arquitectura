@@ -7,3 +7,6 @@ build
 
 documentation
 rebuild.sh
+
+# Ignore input files
+input

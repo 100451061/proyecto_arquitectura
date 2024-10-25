@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura
+# Install script for directory: /home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -37,41 +37,78 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set path to fallback-tool for dependency-resolution.
+# Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/common/cmake_install.cmake")
+  include("/home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/cmake-build-debug/_deps/googletest-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/imgaos/cmake_install.cmake")
+  include("/home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/cmake-build-debug/_deps/gsl-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/imgsoa/cmake_install.cmake")
+  include("/home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/cmake-build-debug/common/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/cmake-build-debug/imgaos/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/cmake-build-debug/imgsoa/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/cmake-build-debug/imtool-aos/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/cmake-build-debug/imtool-soa/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/cmake-build-debug/utest-common/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/cmake-build-debug/utest-imgaos/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/cmake-build-debug/utest-imgsoa/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/cmake-build-debug/ftest-aos/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/cmake-build-debug/ftest-soa/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
-  if(CMAKE_INSTALL_COMPONENT MATCHES "^[a-zA-Z0-9_.+-]+$")
-    set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
-  else()
-    string(MD5 CMAKE_INST_COMP_HASH "${CMAKE_INSTALL_COMPONENT}")
-    set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INST_COMP_HASH}.txt")
-    unset(CMAKE_INST_COMP_HASH)
-  endif()
+  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
-endif()

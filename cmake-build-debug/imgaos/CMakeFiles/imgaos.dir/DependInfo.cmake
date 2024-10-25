@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/imgaos/imageaos.cpp" "imgaos/CMakeFiles/imgaos.dir/imageaos.cpp.o" "gcc" "imgaos/CMakeFiles/imgaos.dir/imageaos.cpp.o.d"
+  "/home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/imgaos/imageaos.cpp" "imgaos/CMakeFiles/imgaos.dir/imageaos.cpp.o" "gcc" "imgaos/CMakeFiles/imgaos.dir/imageaos.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/common/binaryio.cpp" "common/CMakeFiles/common.dir/binaryio.cpp.o" "gcc" "common/CMakeFiles/common.dir/binaryio.cpp.o.d"
-  "/mnt/c/Users/ferra/Documents/Universidad/Tercero de Carrera/1 - Arquitectura de computadores/Laboratorios/proyecto_arquitectura/common/progargs.cpp" "common/CMakeFiles/common.dir/progargs.cpp.o" "gcc" "common/CMakeFiles/common.dir/progargs.cpp.o.d"
+  "/home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/common/binaryio.cpp" "common/CMakeFiles/common.dir/binaryio.cpp.o" "gcc" "common/CMakeFiles/common.dir/binaryio.cpp.o.d"
+  "/home/nisha/Documents/UC3M/Y3S1/Arquitectura/ProyectoArqui/common/progargs.cpp" "common/CMakeFiles/common.dir/progargs.cpp.o" "gcc" "common/CMakeFiles/common.dir/progargs.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
